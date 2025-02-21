@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111111;
+  overflow-x: hidden;
+}
+
+/* Navbar CSS start */
+
+.navbar {
+  background-color: var(--white);
+  box-shadow: 0px 4px 10px 0px #0000001c;
+  font-family: "Inter", serif;
+}
+
+.navbar .nav-logo {
+  height: 26px;
+  width: 82px;
+}
+
+.navbar-nav li button {
+  border-radius: 13px;
+  border: 1px solid #00000066;
+  padding: 6.5px 15px;
+}
+
+/* Navbar CSS end */
+
+/* Top Banner CSS start */
+
+#top-banner {
+  position: relative;
+  background: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 344px;
+  width: 100%;
+  padding: 45px 0;
+  margin-bottom: 120px;
+}
+
+#top-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://ik.imagekit.io/snr81lrxkk/Nerve/banner-img.png?updatedAt=1740125919728");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  z-index: 1;
+}
+
+#top-banner .banner-left .heading h1 {
+  font-size: 40px;
+  white-space: wrap;
+}
+
+.banner-left .text-blue {
+  color: #275bcb;
+}
+
+.register input {
+  padding: 10px 0 10px 29px;
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 4px 0 0 4px;
+  background: rgba(245, 245, 245, 1);
+  width: 333px;
+  z-index: 999;
+}
+
+.register button {
+  padding: 10px 29px;
+  background-color: #d52d27;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.features-cards .card {
+  max-width: 170px;
+  width: 100%;
+  height: 96px;
+  border: none;
+  padding: 18px 4px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  margin: 0 2px;
+}
+
+.features-cards .card:hover {
+  box-shadow: 0px 8px 10px 0px #00000021;
+  cursor: pointer;
+}
+
+.features-cards .card:hover h2 {
+  color: #275bcb;
+}
+
+.features-cards .card h2 {
+  font-size: 24px;
+  color: #757575;
+  font-weight: 700;
+}
+
+.features-cards .card p {
+  font-size: 17px;
+  color: #858585;
+}
+
+.banner-right .men-img img {
+  width: 50%;
+  height: auto;
+}
+
+/* Top Banner CSS end */
+
+/* Explore Products CSS starts */
+
+#explore-products {
+  margin-bottom: 60px;
+}
+
+#explore-products .heading h3 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Source Serif 4", serif;
+}
+
+#explore-products .sub-heading p {
+  font-size: 17px;
+}
+
+#explore-products .products {
+  width: 100%;
+}
+
+#explore-products .products .card {
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+  position: relative;
+  color: white;
+  border: none;
+  width: 315px;
+  height: 334px;
+}
+
+#explore-products .products .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(53, 53, 53, 0.28);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+#explore-products .products .card * {
+  position: relative;
+  z-index: 2;
+}
+
+#explore-products .products .card-1 {
+  background-image: url("https://ik.imagekit.io/snr81lrxkk/Nerve/Prdocut-img-1.png?updatedAt=1740039961575");
+  background-size: 100%;
+}
+
+#explore-products .products .card-2 {
+  background-image: url("https://ik.imagekit.io/snr81lrxkk/Nerve/Prdocut-img-2.png?updatedAt=1740039961256");
+  background-size: 100%;
+}
+
+#explore-products .products .card-3 {
+  background-image: url("https://ik.imagekit.io/snr81lrxkk/Nerve/Prdocut-img-3.png?updatedAt=1740039961683");
+  background-size: 100%;
+}
+
+#explore-products .products .card-4 {
+  background-image: url("https://ik.imagekit.io/snr81lrxkk/Nerve/Prdocut-img-4.png?updatedAt=1740039961432");
+  background-size: 100% 100vh;
+}
+
+.explore-btn a {
+  padding: 10px 29px;
+  border: 1px solid #d52d27;
+  border-radius: 4px;
+}
+
+.explore-btn a:hover {
+  background-color: #d52d27;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/* Explore Products CSS ends */
+
+/* Market Today CSS starts */
+
+#market-today {
+  margin-bottom: 60px;
+}
+
+#market-today .heading h3 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Source Serif 4", serif;
+}
+
+#market-today .sub-heading p {
+  font-size: 17px;
+}
+
+#market-today .table-container .card {
+  padding: 16px 16px 0 16px;
+  width: 100%;
+  height: 334px;
+}
+
+.table-container .table tr .price-change {
+  color: #e70707;
+}
+
+.table-container .table tr .volume,
+.table-container .table tr .sector {
+  color: rgba(102, 102, 102, 1);
+}
+
+.table-heading {
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+}
+
+.table-heading td {
+  color: rgba(102, 102, 102, 1);
+  background-color: rgba(174, 174, 174, 0.12);
+}
+
+/* Market Today CSS ends */
+
+/* FAQ CSS starts */
+
+#faq {
+  margin-bottom: 60px;
+}
+
+#faq .heading h3 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Source Serif 4", serif;
+}
+
+.accordion {
+  border: none;
+}
+
+.accordion-item {
+  border: none !important;
+  background-color: transparent;
+}
+
+.accordion-item:focus {
+  display: none;
+}
+
+.accordion-button::after {
+  display: none; /* Remove default arrow icons */
+}
+
+.accordion-button {
+  position: relative;
+  text-align: left;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(218, 218, 218, 1);
+  font-weight: 700;
+}
+
+.accordion-button:focus {
+  background-color: transparent;
+}
+
+.accordion-button::before {
+  content: "\002B"; /* Plus sign */
+  font-size: 1.2rem;
+  position: absolute;
+  right: 20px;
+}
+
+.accordion-button:not(.collapsed)::before {
+  content: "\2212"; /* Minus sign */
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgba(213, 45, 39, 1);
+  background-color: #fff;
+  font-weight: 700;
+}
+
+/* FAQ CSS ends */
+
+/* Footer CSS start */
+
+#footer {
+  background-color: var(--black);
+  height: 373px;
+  width: 100%;
+  padding-top: 24px;
+  color: #ffffff80;
+  font-size: 14px;
+}
+
+.footer-logo img {
+  width: 82px;
+  height: 31px;
+}
+
+.customer-care a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.payments img {
+  height: 38px;
+}
+
+.imp-funct ul li a,
+.products ul li a {
+  text-decoration: none;
+  color: #ffffff80;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.imp-funct ul li,
+.products ul li {
+  margin: 15px 0;
+}
+
+/* Footer CSS end */
+
+@media only screen and (max-width: 320px) {
+  #top-banner::after {
+    display: none;
+  }
+
+  .register input {
+    width: 100%;
+  }
+
+  .register button {
+    width: 100%;
+  }
+
+  #explore-products {
+    margin-top: 400px;
+  }
+
+  .features-cards .card {
+    width: 40%;
+  }
+
+  .features-cards .card h2 {
+    font-size: 18px;
+  }
+
+  .features-cards .card p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 365px) {
+  #top-banner::after {
+    display: none;
+  }
+
+  .register input {
+    width: 100%;
+  }
+
+  .register button {
+    width: 100%;
+  }
+
+  .features-cards .card {
+    width: 45%;
+  }
+
+  .features-cards .card h2 {
+    font-size: 22px;
+  }
+
+  .features-cards .card p {
+    font-size: 13px;
+  }
+
+  #explore-products {
+    margin-top: 320px;
+  }
+
+  #explore-products .products .card {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 366px) and (max-width: 767px) {
+  /* Top Banner mobile CSS start */
+
+  /* #top-banner {
+    margin-bottom: 200px;
+  } */
+
+  #top-banner::after {
+    display: none;
+  }
+
+  .register input {
+    width: 100%;
+  }
+
+  .register button {
+    width: 100%;
+  }
+
+  /* Top Banner mobile CSS end */
+
+  /* Explore products mobile css start */
+
+  #explore-products {
+    margin-top: 300px;
+  }
+
+  #explore-products .products .card {
+    width: 90%;
+  }
+
+  /* Explore products mobile css ends */
+
+  /* Market today mobile css start */
+
+  .table-heading td {
+    white-space: nowrap;
+  }
+
+  #market-today .table-container .card {
+    height: auto;
+    width: 90%;
+  }
+
+  /* Market today mobile css end */
+
+  /* FAQ mobile CSS starts */
+
+  .accordion-button {
+    font-size: 15px;
+  }
+
+  /* FAQ mobile CSS ends */
+
+  /* Mobile footer css start */
+
+  #footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .payments img {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Mobile footer css end */
+}
+
+@media only screen and (max-width: 1400px) {
+  #footer {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  #top-banner::after {
+    display: none;
+  }
+
+  #explore-products .products .card {
+    font-size: 17px;
+    width: 226px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  #explore-products .products .card {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #explore-products .products .card {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  #explore-products {
+    margin-top: 150px;
+  }
+}
