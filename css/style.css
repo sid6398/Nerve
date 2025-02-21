@@ -97,7 +97,6 @@ body {
   font-size: 17px;
   font-family: 'Helvetica';
   color: #00000099;
-
 }
 
 .banner-left .text-blue {
@@ -112,7 +111,7 @@ body {
   width: 333px;
   z-index: 999;
   font-family: 'Helvetica';
-
+  z-index: 999999999999999;
 }
 
 .register button {
@@ -122,6 +121,8 @@ body {
   border-radius: 0 4px 4px 0;
   color: var(--white);
   font-weight: 700;
+  cursor: pointer;
+  z-index: 999999999999999;
 }
 
 .features-cards .card {
