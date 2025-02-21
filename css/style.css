@@ -9,6 +9,11 @@
   outline: none;
 }
 
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica.ttf') format('truetype');
+}
+
 :root {
   --white: #ffffff;
   --black: #111111;
@@ -34,6 +39,10 @@ body {
   background-color: var(--white);
   box-shadow: 0px 4px 10px 0px #0000001c;
   font-family: "Inter", serif;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999999;
 }
 
 .navbar .nav-logo {
@@ -61,12 +70,13 @@ body {
   width: 100%;
   padding: 45px 0;
   margin-bottom: 120px;
+  padding-top: 100px;
 }
 
 #top-banner::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 15%;
   right: 0;
   width: 100%;
   height: 100%;
@@ -80,6 +90,14 @@ body {
 #top-banner .banner-left .heading h1 {
   font-size: 40px;
   white-space: wrap;
+  font-family: "Source Serif 4", serif;
+}
+
+#top-banner .banner-left .sub-heading p{
+  font-size: 17px;
+  font-family: 'Helvetica';
+  color: #00000099;
+
 }
 
 .banner-left .text-blue {
@@ -93,6 +111,8 @@ body {
   background: rgba(245, 245, 245, 1);
   width: 333px;
   z-index: 999;
+  font-family: 'Helvetica';
+
 }
 
 .register button {
@@ -105,6 +125,7 @@ body {
 }
 
 .features-cards .card {
+  font-family: 'Helvetica';
   max-width: 170px;
   width: 100%;
   height: 96px;
@@ -149,6 +170,7 @@ body {
 
 #explore-products {
   margin-bottom: 60px;
+  margin-top: 190px;
 }
 
 #explore-products .heading h3 {
@@ -159,6 +181,8 @@ body {
 
 #explore-products .sub-heading p {
   font-size: 17px;
+  font-family: 'Helvetica';
+  color: #00000099;
 }
 
 #explore-products .products {
@@ -166,6 +190,7 @@ body {
 }
 
 #explore-products .products .card {
+  background: #00000099;
   border-radius: 4px;
   padding: 20px;
   font-size: 24px;
@@ -244,12 +269,18 @@ body {
 
 #market-today .sub-heading p {
   font-size: 17px;
+  color: #00000099;
+  font-family: 'Helvetica';
 }
 
 #market-today .table-container .card {
   padding: 16px 16px 0 16px;
   width: 100%;
   height: 334px;
+}
+
+.table-container{
+  font-family: 'Helvetica';
 }
 
 .table-container .table tr .price-change {
@@ -286,6 +317,7 @@ body {
 
 .accordion {
   border: none;
+  font-family: 'Helvetica';
 }
 
 .accordion-item {
@@ -341,6 +373,7 @@ body {
   padding-top: 24px;
   color: #ffffff80;
   font-size: 14px;
+  font-family: 'Helvetica';
 }
 
 .footer-logo img {
@@ -373,12 +406,28 @@ body {
 /* Footer CSS end */
 
 @media only screen and (max-width: 320px) {
+  #top-banner .banner-left .heading h1 {
+    font-size: 28px;
+    white-space: wrap;
+  }
+
+  #top-banner .banner-left .sub-heading p{
+    font-size: 13px;
+  }
+  
+
+  #top-banner{
+    padding: 80px 0;
+  }
+
   #top-banner::after {
     display: none;
   }
+  
 
   .register input {
     width: 100%;
+    padding: 8px 0 8px 10px;
   }
 
   .register button {
@@ -386,7 +435,7 @@ body {
   }
 
   #explore-products {
-    margin-top: 400px;
+    margin-top: 300px;
   }
 
   .features-cards .card {
@@ -403,12 +452,27 @@ body {
 }
 
 @media only screen and (min-width: 321px) and (max-width: 365px) {
+  #top-banner .banner-left .heading h1 {
+    font-size: 27px;
+    white-space: wrap;
+  }
+
+  #top-banner .banner-left .sub-heading p{
+    font-size: 13.5px;
+  }
+  
+
+  #top-banner{
+    padding: 80px 0;
+  }
+
   #top-banner::after {
     display: none;
   }
 
   .register input {
     width: 100%;
+    padding: 8px 0 8px 10px;
   }
 
   .register button {
@@ -428,7 +492,7 @@ body {
   }
 
   #explore-products {
-    margin-top: 320px;
+    margin-top: 230px;
   }
 
   #explore-products .products .card {
@@ -439,9 +503,19 @@ body {
 @media only screen and (min-width: 366px) and (max-width: 767px) {
   /* Top Banner mobile CSS start */
 
-  /* #top-banner {
-    margin-bottom: 200px;
-  } */
+  #top-banner{
+    padding: 80px 0;
+  }
+
+  #top-banner .banner-left .heading h1 {
+    font-size: 28px;
+    white-space: wrap;
+  }
+
+  #top-banner .banner-left .sub-heading p{
+    font-size: 14px;
+  }
+  
 
   #top-banner::after {
     display: none;
@@ -449,6 +523,7 @@ body {
 
   .register input {
     width: 100%;
+    padding: 8px 0 8px 10px;
   }
 
   .register button {
@@ -460,7 +535,7 @@ body {
   /* Explore products mobile css start */
 
   #explore-products {
-    margin-top: 300px;
+    margin-top: 230px;
   }
 
   #explore-products .products .card {
@@ -536,6 +611,17 @@ body {
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
   #explore-products {
-    margin-top: 150px;
+    margin-top: 130px;
+  }
+
+  #top-banner::after {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  #top-banner::after {
+    top: 15%;
+    right: 15%;
   }
 }
