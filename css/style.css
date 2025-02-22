@@ -42,7 +42,7 @@ body {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 999999;
+  z-index: 99999999999999999999999;
 }
 
 .navbar .nav-logo {
@@ -111,7 +111,7 @@ body {
   width: 333px;
   z-index: 999;
   font-family: 'Helvetica';
-  z-index: 999999999999999;
+  z-index: 999999;
 }
 
 .register button {
@@ -122,7 +122,7 @@ body {
   color: var(--white);
   font-weight: 700;
   cursor: pointer;
-  z-index: 999999999999999;
+  z-index: 999999;
 }
 
 .features-cards .card {
