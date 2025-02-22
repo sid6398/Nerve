@@ -56,6 +56,12 @@ body {
   padding: 6.5px 15px;
 }
 
+.navbar-nav li button:hover{
+  background-color: #00000066;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
 /* Navbar CSS end */
 
 /* Top Banner CSS start */
